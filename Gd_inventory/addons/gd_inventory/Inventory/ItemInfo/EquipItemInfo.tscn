@@ -1,0 +1,162 @@
+[gd_scene load_steps=3 format=3 uid="uid://beti5rvls32c7"]
+
+[ext_resource type="Script" path="res://addons/gd_inventory/Inventory/ItemInfo/EquipItemInfo.gd" id="1_yoq4i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p06i2"]
+bg_color = Color(0.286275, 0.286275, 0.286275, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+
+[node name="EquipItemInfo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yoq4i")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer2" type="Control" parent="."]
+custom_minimum_size = Vector2(570, 1000)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -285.0
+offset_top = -500.0
+offset_right = 285.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer2"]
+custom_minimum_size = Vector2(570, 1000)
+layout_mode = 2
+offset_right = 570.0
+offset_bottom = 1000.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_p06i2")
+
+[node name="LabelTitle" type="Label" parent="MarginContainer2"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -133.0
+offset_top = 20.0
+offset_right = 133.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
+text = "九重天(完美) x1"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Label2" type="Label" parent="MarginContainer2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -96.0
+offset_top = 80.0
+offset_right = 96.0
+offset_bottom = 103.0
+grow_horizontal = 2
+text = "————————————"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 132.0
+offset_right = -10.0
+offset_bottom = -103.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="LabeTitle" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "新手武器必备"
+
+[node name="LabelQuatity" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "品质：普通"
+
+[node name="LabelType" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "种类：武器"
+
+[node name="LabelTips" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "手持木盾和长剑，是正宗的新手套装。"
+
+[node name="LabelDescription" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "效果：魔法攻击力 +153
+效果：诅咒魔法命中 +15%
+效果：最大法力 +11%
+效果：魔法攻击力 +20%
+效果：元素魔法命中 +9%"
+
+[node name="LabelPrice" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "单价：50000"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -66.0
+offset_right = -10.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 15
+
+[node name="ButtonUse" type="Button" parent="MarginContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 22
+text = "使用"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="ButtonSale" type="Button" parent="MarginContainer2/HBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "出售"
+
+[connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]

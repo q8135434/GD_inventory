@@ -1,0 +1,301 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhagg7nht3kwc"]
+
+[ext_resource type="Script" path="res://addons/gd_inventory/Inventory/InventoryGui/Bag.gd" id="1_blfmc"]
+[ext_resource type="Script" path="res://addons/gd_inventory/Inventory/InventoryGui/ItemGridContainer.gd" id="2_7eql7"]
+[ext_resource type="PackedScene" uid="uid://c2i3phnhmr7jf" path="res://addons/gd_inventory/Inventory/InventoryGui/ItemColorRect.tscn" id="3_ehj6m"]
+
+[node name="Bag" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_blfmc")
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(570, 1000)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -285.0
+offset_top = -500.0
+offset_right = 285.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabBar" type="TabBar" parent="."]
+custom_minimum_size = Vector2(600, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -283.0
+offset_top = 150.0
+offset_right = 317.0
+offset_bottom = 210.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+tab_count = 4
+tab_0/title = "     全部     "
+tab_1/title = "     装备     "
+tab_2/title = "     消耗品     "
+tab_3/title = "     技能书     "
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 250.0
+offset_right = -40.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="ItemGridContainer" type="GridContainer" parent="MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 5
+script = ExtResource("2_7eql7")
+
+[node name="Panel" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel2" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel3" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel4" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel5" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel6" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel7" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel8" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel9" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel10" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel11" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel12" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel13" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel14" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel15" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel16" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel17" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel18" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel19" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel20" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel21" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel22" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel23" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel24" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel25" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel26" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel27" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel28" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel29" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel30" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel31" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel32" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel33" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel34" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel35" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel36" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel37" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel38" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel39" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel40" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel41" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel42" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel43" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel44" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel45" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel46" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel47" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel48" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel49" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel50" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel51" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel52" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel53" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel54" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel55" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel56" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel57" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel58" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel59" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel60" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel61" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Panel62" parent="MarginContainer/ScrollContainer/ItemGridContainer" instance=ExtResource("3_ehj6m")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -134.0
+offset_right = 120.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "——点击此处关闭窗口——"
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -70.0
+offset_top = 42.0
+offset_right = 34.0
+offset_bottom = 73.0
+grow_horizontal = 2
+text = "测试添加物品"
+
+[connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
+[connection signal="tab_changed" from="TabBar" to="." method="_on_tab_bar_tab_changed"]
+[connection signal="scroll_ended" from="MarginContainer/ScrollContainer" to="MarginContainer/ScrollContainer/ItemGridContainer" method="_on_scroll_container_scroll_ended"]
+[connection signal="scroll_started" from="MarginContainer/ScrollContainer" to="MarginContainer/ScrollContainer/ItemGridContainer" method="_on_scroll_container_scroll_started"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
